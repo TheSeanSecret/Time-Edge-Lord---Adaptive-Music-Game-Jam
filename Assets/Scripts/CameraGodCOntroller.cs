@@ -6,6 +6,7 @@ public class CameraGodCOntroller : MonoBehaviour
 {
     // some parts adapted from: https://www.youtube.com/watch?v=rnqF6S7PfFA&t=259s&ab_channel=GameDevGuide
 
+    //Movement
     public float movementSpeed;
     public float movementTime;
     public float rotationAmount;
@@ -18,6 +19,11 @@ public class CameraGodCOntroller : MonoBehaviour
 
     private Camera mainCamera;
     public GameObject plane;
+
+    // Trap Gameobjects
+    public Vector3 rayHitPositionForTrapPlacemenet;
+
+    public GameObject tempTrap;
 
     void Start()
     {
@@ -33,6 +39,7 @@ public class CameraGodCOntroller : MonoBehaviour
     void Update()
     {
         HandleMovementInput();
+        TrapPlacementController();
     }
 
     void HandleMovementInput()
@@ -62,6 +69,7 @@ public class CameraGodCOntroller : MonoBehaviour
         {
             newRotation *= Quaternion.Euler(Vector3.up * Input.GetAxis("Mouse X") * rotationAmount);
             newRotation *= Quaternion.Euler(Vector3.right * Input.GetAxis("Mouse Y") * -rotationAmount);
+
             //Debug.Log(Input.GetAxis("Mouse X"));
         }
 
@@ -76,7 +84,8 @@ public class CameraGodCOntroller : MonoBehaviour
 
 
 
-        //Camera Movement with mouse
+        // Camera Movement with mouse
+        // This took fckung forever to get to work
         Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
         Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
         
@@ -89,11 +98,14 @@ public class CameraGodCOntroller : MonoBehaviour
         {
             Vector3 rayHitPosition = cameraRay.GetPoint(rayLength);
 
+            rayHitPositionForTrapPlacemenet = rayHitPosition;
+
             Debug.DrawLine(cameraRay.origin, rayHitPosition, Color.red);
             // Debug.Log(grabbedPoint);
 
+
+
             RaycastHit hit;
-            
             if (Input.GetKey(KeyCode.Mouse2) && plane.GetComponent<MeshCollider>().Raycast(cameraRay, out hit, rayLength))
             {
                 if (previousMouseRayPosition == Vector3.zero) // First  time?
@@ -117,6 +129,15 @@ public class CameraGodCOntroller : MonoBehaviour
                 // Debug.Log("Mouse released");
                 previousMouseRayPosition = Vector3.zero;
             }
+        }
+    }
+    void TrapPlacementController()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            Instantiate(tempTrap, new Vector3(rayHitPositionForTrapPlacemenet.x, rayHitPositionForTrapPlacemenet.y + tempTrap.transform.localScale.y/2, rayHitPositionForTrapPlacemenet.z), Quaternion.identity);
+            
+            
         }
     }
 }
