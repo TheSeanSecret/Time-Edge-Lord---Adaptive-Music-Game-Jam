@@ -4,16 +4,30 @@ using UnityEngine;
 
 public class CameraGodCOntroller : MonoBehaviour
 {
-    // some parts adapted from: https://www.youtube.com/watch?v=rnqF6S7PfFA&t=259s&ab_channel=GameDevGuide
+    // Main functionality adapted from: https://www.youtube.com/watch?v=rnqF6S7PfFA&t=259s&ab_channel=GameDevGuide
+
+    // TODO:
+    // Get Tilt Rotation to work
+    // Clamp Tilt Rotation if we choose to use it
+    // Clamp Zoom
+    // Limit camera movement outside of level
 
     //Movement
+    public Transform cameraTransform;
+    public Transform tiltObjectTransform;
+
     public float movementSpeed;
     public float movementTime;
     public float rotationAmount;
     public float rotationTime;
+    public float scrollSpeed;
+    public float zoomMin;
+    public float zoomMax;
 
-    public Quaternion newRotation;
+    public Quaternion newTiltRotation;
+    public Quaternion newOrbitRotation;
     public Vector3 newPosition;
+    public Vector3 newZoom;
 
     private Vector3 previousMouseRayPosition;
 
@@ -21,7 +35,7 @@ public class CameraGodCOntroller : MonoBehaviour
     public GameObject plane;
 
     // Trap Gameobjects
-    public Vector3 rayHitPositionForTrapPlacemenet;
+    private Vector3 rayHitPositionForTrapPlacemenet;
 
     public GameObject tempTrap;
 
@@ -30,7 +44,11 @@ public class CameraGodCOntroller : MonoBehaviour
         previousMouseRayPosition = Vector3.zero;
 
         newPosition = transform.position;
-        newRotation = transform.rotation;
+
+        newOrbitRotation = transform.rotation;
+
+        newTiltRotation = tiltObjectTransform.rotation;
+        newZoom = cameraTransform.localPosition;
 
         mainCamera = FindObjectOfType<Camera>();
     }
@@ -44,7 +62,8 @@ public class CameraGodCOntroller : MonoBehaviour
 
     void HandleMovementInput()
     {
-        /*
+        // Camera Movement with WASD/Arrow Keys - tilt rotation causes issues with Y position not staying at y: 0 (Vector3.right).
+        
         if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             newPosition += (transform.forward * movementSpeed);
@@ -63,24 +82,45 @@ public class CameraGodCOntroller : MonoBehaviour
         {
             newPosition += (transform.right * -movementSpeed);
         }
-        */
 
+        float zoomDistance = Vector3.Distance(cameraTransform.localPosition, transform.position);
+
+        //Debug.Log(zoomDistance);
+
+        // Zoom
+        if (Input.mouseScrollDelta.y != 0)
+        {
+            newZoom = Vector3.MoveTowards(cameraTransform.localPosition, transform.position, Input.mouseScrollDelta.y * scrollSpeed);
+        }
+
+        // Janky way to limit zoom
+        if (zoomDistance < 50)
+        {
+            newZoom = Vector3.MoveTowards(cameraTransform.localPosition, transform.position, -20);
+        }
+
+        if (zoomDistance > 150)
+        {
+            newZoom = Vector3.MoveTowards(cameraTransform.localPosition, transform.position, 20);
+        }
+
+
+        // Camera Rotation
         if (Input.GetKey(KeyCode.Mouse0))
         {
-            newRotation *= Quaternion.Euler(Vector3.up * Input.GetAxis("Mouse X") * rotationAmount);
-            newRotation *= Quaternion.Euler(Vector3.right * Input.GetAxis("Mouse Y") * -rotationAmount);
+            newOrbitRotation *= Quaternion.Euler(Vector3.up * Input.GetAxis("Mouse X") * rotationAmount);
+            //newTiltRotation *= Quaternion.Euler(Vector3.right * Input.GetAxis("Mouse Y") * -rotationAmount);
 
             //Debug.Log(Input.GetAxis("Mouse X"));
         }
 
-
-        // Lerped
+        // Lerp
         transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * movementTime);
-        transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime * rotationTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, newOrbitRotation, Time.deltaTime * rotationTime);
 
-        // Hard
-        // transform.position = newPosition;
-        // transform.rotation = newRotation;
+        //tiltObjectTransform.rotation = Quaternion.Lerp(tiltObjectTransform.rotation, newTiltRotation, Time.deltaTime * rotationTime);
+
+        cameraTransform.localPosition = Vector3.Lerp(cameraTransform.localPosition, newZoom, Time.deltaTime * scrollSpeed);
 
 
 
@@ -116,7 +156,7 @@ public class CameraGodCOntroller : MonoBehaviour
                 {
                     Vector3 difference;
                     difference = previousMouseRayPosition - rayHitPosition;
-                    Debug.Log(difference);
+                    // Debug.Log(difference);
 
                     newPosition += difference;
                 //    previousMouseRayPosition = grabbedPoint;

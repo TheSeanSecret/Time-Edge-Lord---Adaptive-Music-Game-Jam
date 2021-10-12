@@ -12,8 +12,8 @@ public class CameraSwitcher : MonoBehaviour
     void Start()
     {
         // Start with the player perspective and lock cursor
-        PlayerCamera.SetActive(true);
-        Cursor.lockState = CursorLockMode.Locked;
+        // PlayerCamera.SetActive(true);
+        // Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

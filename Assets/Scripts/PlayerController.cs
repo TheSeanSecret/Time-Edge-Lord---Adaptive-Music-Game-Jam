@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        
+        //transform.rotation = new Quaternion(0f, 90f, 0f, 0f);
     }
 
     // Update is called once per frame
