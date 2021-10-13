@@ -36,7 +36,7 @@ Material:
     - _PerspectiveFilter: 0.875
     - _ScaleRatioA: 0.9
     - _ScaleRatioB: 1
-    - _ScaleRatioC: 0.66841865
+    - _ScaleRatioC: 0.73125
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -48,9 +48,9 @@ Material:
     - _StencilWriteMask: 255
     - _TextureHeight: 1024
     - _TextureWidth: 1024
-    - _UnderlayDilate: 0.08
-    - _UnderlayOffsetX: 0.85
-    - _UnderlayOffsetY: -0.53
+    - _UnderlayDilate: 0.09
+    - _UnderlayOffsetX: -0
+    - _UnderlayOffsetY: 0
     - _UnderlaySoftness: 0.164
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
