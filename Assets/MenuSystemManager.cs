@@ -13,6 +13,8 @@ public class MenuSystemManager : MonoBehaviour
     private float focusdistance = 10;
     private float newfocusdistance = 0;
     public float focusSpeed = 1;
+    public float timeScaleSwitchLerpTime = 1;
+    public float newTimeScaleValue = 2;
 
     // Cameras
     public GameObject PlayerCamera;
@@ -59,8 +61,8 @@ public class MenuSystemManager : MonoBehaviour
             newfocusdistance = 0;
 
             //Disable camera movement on both views
-            godCameraMovement.GetComponent<CameraGodCOntroller>().enabled = false;
-            playerCameraMovement.GetComponent<PlayerController>().enabled = false;
+            // godCameraMovement.GetComponent<CameraGodCOntroller>().enabled = false;
+            // playerCameraMovement.GetComponent<PlayerController>().enabled = false;
             playerCameraLookAround.GetComponent<MouseLook>().enabled = false;
 
 
@@ -75,7 +77,7 @@ public class MenuSystemManager : MonoBehaviour
             }
 
             // Slow down time
-            Time.timeScale = 0.2f;
+            newTimeScaleValue = 0.2f;
         }
 
         if (Input.GetKeyUp(KeyCode.Tab))
@@ -84,8 +86,8 @@ public class MenuSystemManager : MonoBehaviour
             newfocusdistance = 10;
 
             //Enable camera movement on both views
-            godCameraMovement.GetComponent<CameraGodCOntroller>().enabled = true;
-            playerCameraMovement.GetComponent<PlayerController>().enabled = true;
+            // godCameraMovement.GetComponent<CameraGodCOntroller>().enabled = true;
+            // playerCameraMovement.GetComponent<PlayerController>().enabled = true;
             playerCameraLookAround.GetComponent<MouseLook>().enabled = true;
 
             turretMenu.SetActive(false);
@@ -104,10 +106,12 @@ public class MenuSystemManager : MonoBehaviour
             }
 
             // Time back to normal
-            Time.timeScale = 1f;
+            newTimeScaleValue = 1f;
         }
 
         depthOfField.focusDistance.value = focusdistance;
-        focusdistance = Mathf.Lerp(focusdistance, newfocusdistance, focusSpeed * Time.deltaTime);    
+        focusdistance = Mathf.Lerp(focusdistance, newfocusdistance, focusSpeed * Time.deltaTime);
+
+        Time.timeScale = Mathf.Lerp(Time.timeScale, newTimeScaleValue, timeScaleSwitchLerpTime * Time.deltaTime);
     }
 }
