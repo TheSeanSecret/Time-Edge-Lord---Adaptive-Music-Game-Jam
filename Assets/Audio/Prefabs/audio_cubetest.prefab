@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4058661988749293716}
   - component: {fileID: 3650881797611270778}
   m_Layer: 0
-  m_Name: cubey
+  m_Name: audio_cubetest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
