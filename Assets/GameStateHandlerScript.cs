@@ -53,36 +53,71 @@ public class GameStateHandlerScript : MonoBehaviour
 
     public void StartCalmTimes()
     {
-        // If this is our first time?
-
         Invoke("StartSiege", 10f);
-            // Add time to the timer
-            // Decide on where the enemies should come from next
-            // Start Siege after a certain condition... X amount of time passed? X amount of music played?
+
+        // Spawn enemies from random direction
+        int randomDirection = Random.Range(1, 5);
+        switch (randomDirection)
+        {
+            case 4:
+                North.GetComponent<EnemySpawnerScript>().SetCurrentTurnAndSpawnEnemies(currentTurn);
+                Debug.Log("Enemies will come from North");
+                break;
+            case 3:
+                East.GetComponent<EnemySpawnerScript>().SetCurrentTurnAndSpawnEnemies(currentTurn);
+                Debug.Log("Enemies will come from East");
+                break;
+            case 2:
+                West.GetComponent<EnemySpawnerScript>().SetCurrentTurnAndSpawnEnemies(currentTurn);
+                Debug.Log("Enemies will come from West");
+                break;
+            case 1:
+                South.GetComponent<EnemySpawnerScript>().SetCurrentTurnAndSpawnEnemies(currentTurn);
+                Debug.Log("Enemies will come from South");
+                break;
+        }
+
+        // Find all enemies and disable renderer and movement except for sound
+        GameObject[] EnemiesToDisable = GameObject.FindGameObjectsWithTag("Enemy");
+
+        foreach (GameObject Enemy in EnemiesToDisable)
+        {
+            Enemy.GetComponent<EnemyCubeAi>().enabled = false;
+            Enemy.GetComponent<MeshRenderer>().enabled = false;
+        }
+
+        // Count number of enemies
+        spawnedNumberOfEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        Debug.Log("There are " + spawnedNumberOfEnemies + " enemies");
+
     }
 
     public void StartSiege()
     {
+        Debug.Log("Started Siege");
         SiegeDrums.GetComponent<TriggerSiegeDrums>().PlayDrums();
 
-        // Spawn enemies
-        North.GetComponent<EnemySpawnerScript>().SpawnEnemy();
-        South.GetComponent<EnemySpawnerScript>().SpawnEnemy();
-        East.GetComponent<EnemySpawnerScript>().SpawnEnemy();
-        West.GetComponent<EnemySpawnerScript>().SpawnEnemy();
+        // Find all enemies and disable renderer and movement except for sound
+        GameObject[] EnemiesToDisable = GameObject.FindGameObjectsWithTag("Enemy");
 
-        spawnedNumberOfEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        foreach (GameObject Enemy in EnemiesToDisable)
+        {
+            Enemy.GetComponent<EnemyCubeAi>().enabled = true;
+            Enemy.GetComponent<MeshRenderer>().enabled = true;
+        }
         // Display "Siege XX Text"
-        // When all enemies are dead we call EndSiege();
 
+        Debug.Log("Turn is: " + currentTurn);
+        currentTurn++;
+
+        // When all enemies are dead (checked in Update) we call EndSiege();
     }
 
     public void EndSiege()
     {
         SiegeDrums.GetComponent<TriggerSiegeDrums>().StopDrums();
 
-        currentTurn++;
-        Debug.Log("Turn is: " + currentTurn);
+
         if (currentTurn >= numberOfSieges)
         {
             GameEndWin();
@@ -101,7 +136,7 @@ public class GameStateHandlerScript : MonoBehaviour
     public void GameEndLose()
     {
         // You lose! :(
-        Time.timeScale = 0f;
+        Time.timeScale = 0f;    
         YouLoseText.SetActive(true);
         Debug.Log("You Lose");
     }

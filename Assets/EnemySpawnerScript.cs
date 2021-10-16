@@ -9,6 +9,9 @@ public class EnemySpawnerScript : MonoBehaviour
     public GameObject TriangleEnemy;
 
     public GameObject GameStateHandlerScript;
+    public int thisTimesCurrentTurn = 2;
+    int currentTurn = 1;
+    int numberOfEnemiesToSpawn;
 
     void Start()
     {
@@ -19,6 +22,17 @@ public class EnemySpawnerScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SetCurrentTurnAndSpawnEnemies(int _currentTurn)
+    {
+        currentTurn = _currentTurn;
+        numberOfEnemiesToSpawn = currentTurn * thisTimesCurrentTurn;
+
+        for (int i = 0; i < numberOfEnemiesToSpawn; i++)
+        {
+            SpawnEnemy();
+        }
     }
 
     public void SpawnEnemy()

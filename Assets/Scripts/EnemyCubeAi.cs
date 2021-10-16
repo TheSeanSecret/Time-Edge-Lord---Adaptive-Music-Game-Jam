@@ -27,7 +27,7 @@ public class EnemyCubeAi : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(0.5f, 0.5f, 1.0f), speed * Time.deltaTime);
     }
 
-    void OnColliderEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         /*
         if (other.gameObject.tag == "Bullet")
