@@ -2232,10 +2232,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -975617578
-      Data2: 1075064623
-      Data3: -2131751005
-      Data4: -183344378
+      Data1: -586516348
+      Data2: 1233292433
+      Data3: 1581181850
+      Data4: 643779840
     Path: event:/Music/SiegeDrums/SiegeDrums
   Event: 
   PlayEvent: 1

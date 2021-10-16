@@ -222,7 +222,7 @@ MonoBehaviour:
       Data2: 1237935250
       Data3: -612978289
       Data4: -1437874353
-    Path: event:/Environmental/Sky/Play_SkyWind
+    Path: event:/Environmental/Play_SkyWind
   Event: 
   PlayEvent: 3
   StopEvent: 4
@@ -278,8 +278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   siegeDrumsEvent:
     Guid:
-      Data1: -975617578
-      Data2: 1075064623
-      Data3: -2131751005
-      Data4: -183344378
+      Data1: -586516348
+      Data2: 1233292433
+      Data3: 1581181850
+      Data4: 643779840
     Path: event:/Music/SiegeDrums/SiegeDrums
