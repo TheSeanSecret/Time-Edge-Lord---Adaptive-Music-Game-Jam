@@ -102,7 +102,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -3113166394986070347}
+  - {fileID: -4147563364997622561}
   MinDistance: 1
   MaxDistance: 50
   Length: 2000
@@ -226,8 +226,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -8339549655179565735}
-  - {fileID: -3292810633183694832}
+  - {fileID: -1231449978636356720}
+  - {fileID: 3011732335967043992}
   MinDistance: 5
   MaxDistance: 100
   Length: 0
@@ -438,6 +438,30 @@ MonoBehaviour:
   - Sphere
   - Triangle
   Exists: 0
+--- !u!114 &-6651423006462958640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
+  m_EditorClassIdentifier: 
+  Name: PercentEnemiesRemaining
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-6494936724584552986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,7 +477,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637699831517061912
+  lastModified: 637699833382397860
   FileSizes: []
   Exists: 1
 --- !u!114 &-6399555892331512499
@@ -1068,6 +1092,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 10
   Length: 4410
+--- !u!114 &-4147563364997622561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MissileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-4097531128820689292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1131,7 +1179,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637699831517081912
+  lastModified: 637699833382417806
   FileSizes:
   - Name: 
     Value: 2378
@@ -1661,6 +1709,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 0
+--- !u!114 &-1231449978636356720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
+  m_EditorClassIdentifier: 
+  Name: EnemyMaxDistance
+  StudioPath: 
+  Min: 10
+  Max: 1000
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-1218948961547959074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1676,7 +1748,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/ILoveBanks.bank
   Name: ILoveBanks
   StudioPath: bank:/ILoveBanks
-  lastModified: 637699831516972536
+  lastModified: 637699833382318070
   FileSizes: []
   Exists: 1
 --- !u!114 &-882883144138900759
@@ -1976,7 +2048,7 @@ MonoBehaviour:
   - {fileID: -6494936724584552986}
   StringsBanks:
   - {fileID: -3411260506842130420}
-  cacheTime: 637699831517081912
+  cacheTime: 637699833382417806
   cacheVersion: 9
 --- !u!114 &128996284773065451
 MonoBehaviour:
@@ -2257,6 +2329,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 0
+--- !u!114 &737686659642925295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ProjectileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &803649996878884661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2455,7 +2551,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6965231128377757049}
+  - {fileID: -6651423006462958640}
   MinDistance: 1
   MaxDistance: 20
   Length: 46000
@@ -2942,6 +3038,33 @@ MonoBehaviour:
   - Sphere
   - Triangle
   Exists: 0
+--- !u!114 &3011732335967043992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyType
+  m_EditorClassIdentifier: 
+  Name: EnemyType
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Cube
+  - Sphere
+  - Triangle
+  Exists: 1
 --- !u!114 &3140556482575194699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3317,7 +3440,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -6286934476628856830}
+  - {fileID: 737686659642925295}
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
@@ -3433,7 +3556,7 @@ MonoBehaviour:
   StudioPath: parameter:/PercentEnemiesRemaining
   Min: 0
   Max: 100
-  Default: 100
+  Default: 0
   ID:
     data1: 260864318
     data2: 3651645611

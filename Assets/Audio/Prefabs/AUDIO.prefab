@@ -242,7 +242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 186799392101851730}
-  - component: {fileID: 1069251654}
+  - component: {fileID: 4913212390646618710}
   m_Layer: 0
   m_Name: SiegeDrums
   m_TagString: Untagged
@@ -264,7 +264,7 @@ Transform:
   m_Father: {fileID: 7591025604429217518}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1069251654
+--- !u!114 &4913212390646618710
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
