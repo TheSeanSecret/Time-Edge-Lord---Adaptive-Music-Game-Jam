@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2168009066763790864}
   - component: {fileID: 2168009066763790867}
   - component: {fileID: 2168009066763790879}
+  - component: {fileID: 4862206614856399737}
   m_Layer: 0
   m_Name: BulletFast
   m_TagString: Bullet
@@ -27,8 +28,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2168009066763790866}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.844, y: 18.25, z: 6.85}
+  m_LocalRotation: {x: -0.005551102, y: -0.9978581, z: 0.027964067, w: -0.05887638}
+  m_LocalPosition: {x: -130.68585, y: 2.464494, z: 97.121925}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,7 +96,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2168009066763790879
 MonoBehaviour:
@@ -110,7 +111,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
-  tracking: 0
-  trackingSpeed: 1
-  trackingSpeedLerpTime: 1
-  targetTransform: {fileID: 0}
+  tracking: 1
+  trackingSpeed: 20
+  trackingSpeedLerpTime: 200
+--- !u!114 &4862206614856399737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2168009066763790866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1850670645
+      Data2: 1185162280
+      Data3: 986431664
+      Data4: -1109989002
+    Path: event:/BattleSFX/TurretFire/FireMachineGun_Single
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 30

@@ -222,7 +222,7 @@ MonoBehaviour:
       Data2: 1237935250
       Data3: -612978289
       Data4: -1437874353
-    Path: event:/Environmental/Sky/Play_SkyWind
+    Path: event:/Environmental/Play_SkyWind
   Event: 
   PlayEvent: 3
   StopEvent: 4

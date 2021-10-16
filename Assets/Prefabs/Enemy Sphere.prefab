@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4426765803451295821}
   - component: {fileID: 4426765803451295818}
   - component: {fileID: 4426765803451295825}
+  - component: {fileID: -40613591804195296}
   m_Layer: 0
   m_Name: Enemy Sphere
   m_TagString: Enemy
@@ -128,3 +129,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-40613591804195296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4426765803451295819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2115833935
+      Data2: 1265735856
+      Data3: -2032006236
+      Data4: 2040629701
+    Path: event:/Music/EnemyStems/PlayEnemyMusic
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: EnemyType
+    Value: 1
+  OverrideAttenuation: 1
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 100

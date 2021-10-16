@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3740598765240077987}
   - component: {fileID: 3740598765240077986}
   - component: {fileID: 3740598765240077990}
+  - component: {fileID: -1154503611093576631}
   m_Layer: 0
   m_Name: BulletTracking
   m_TagString: Bullet
@@ -95,7 +96,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3740598765240077990
 MonoBehaviour:
@@ -109,8 +110,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da9aca8192dd4b0458b1df98564ba6ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 40
   tracking: 1
-  trackingSpeed: 20
+  trackingSpeed: 1
   trackingSpeedLerpTime: 10
-  targetTransform: {fileID: 0}
+--- !u!114 &-1154503611093576631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3740598765240077985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1100126179
+      Data2: 1157523258
+      Data3: 1130350261
+      Data4: 700942265
+    Path: event:/BattleSFX/TurretFire/FireMissile
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 30

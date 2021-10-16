@@ -12,9 +12,7 @@ public class EnemySpawnerScript : MonoBehaviour
 
     void Start()
     {
-        SpawnEnemy();
-        SpawnEnemy();
-        SpawnEnemy();
+
     }
 
     // Update is called once per frame

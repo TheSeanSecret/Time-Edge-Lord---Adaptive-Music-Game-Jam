@@ -27,12 +27,15 @@ public class EnemyCubeAi : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(0.5f, 0.5f, 1.0f), speed * Time.deltaTime);
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnColliderEnter(Collider other)
     {
+        /*
         if (other.gameObject.tag == "Bullet")
         {
-            Destroy(gameObject);
+            Debug.Log("Hit by bullet");
+            Destroy(this.gameObject);
         }
+        */
 
         // If player hits checkpoint then set new respanwCheckpoint
         if (other.gameObject.tag == "Hill")
