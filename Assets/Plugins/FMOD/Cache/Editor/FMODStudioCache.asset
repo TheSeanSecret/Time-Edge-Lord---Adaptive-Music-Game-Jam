@@ -24,6 +24,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 0
+--- !u!114 &-8781483547829686552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Traps and Turret Placement/MoveObject
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Traps and Turret Placement/MoveObject
+  Guid:
+    Data1: -272837943
+    Data2: 1097041599
+    Data3: 1544349066
+    Data4: 1486511311
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 497
 --- !u!114 &-8751405002142993530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,6 +78,34 @@ MonoBehaviour:
   - Sphere
   - Triangle
   Exists: 0
+--- !u!114 &-8725396747410158809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/Projectile/MissileCollision
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/Projectile/MissileCollision
+  Guid:
+    Data1: 757464025
+    Data2: 1207178812
+    Data3: -1903177285
+    Data4: -268808653
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 7311041118352292506}
+  MinDistance: 1
+  MaxDistance: 50
+  Length: 2000
 --- !u!114 &-8723729241195148969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,12 +202,89 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 1155926849673342616}
-  - {fileID: 274492201747820744}
-  - {fileID: 803649996878884661}
+  - {fileID: -7798476442484591823}
+  - {fileID: 2052297878924734060}
   MinDistance: 5
   MaxDistance: 100
   Length: 0
+--- !u!114 &-7798476442484591823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
+  m_EditorClassIdentifier: 
+  Name: EnemyMaxDistance
+  StudioPath: 
+  Min: 10
+  Max: 1000
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-7550431447602637403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/TurretFire/FireMissile
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/TurretFire/FireMissile
+  Guid:
+    Data1: 1100126179
+    Data2: 1157523258
+    Data3: 1130350261
+    Data4: 700942265
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 30
+  Length: 2912
+--- !u!114 &-7372567336799364342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Traps and Turret Placement/RemoveObject
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Traps and Turret Placement/RemoveObject
+  Guid:
+    Data1: 735535088
+    Data2: 1102900058
+    Data3: -2099242589
+    Data4: 1146919249
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1468
 --- !u!114 &-7294577963154139966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +363,30 @@ MonoBehaviour:
   - Sphere
   - Triangle
   Exists: 0
+--- !u!114 &-6745528630599656635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ProjectileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 0
 --- !u!114 &-6668574868168329502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,9 +429,33 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637698452911492823
+  lastModified: 637699791769943158
   FileSizes: []
   Exists: 1
+--- !u!114 &-6399555892331512499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MissileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 0
 --- !u!114 &-6395341600652313479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,6 +480,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-6266348580685018425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyType
+  m_EditorClassIdentifier: 
+  Name: EnemyType
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Cube
+  - Sphere
+  - Triangle
+  Exists: 0
 --- !u!114 &-6253076910318236296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,6 +529,54 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 1
+  Labels: []
+  Exists: 0
+--- !u!114 &-6248218075022914841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
+  m_EditorClassIdentifier: 
+  Name: EnemyMaxDistance
+  StudioPath: 
+  Min: 10
+  Max: 1000
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
+--- !u!114 &-6212969709055617218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MissileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
   Labels: []
   Exists: 0
 --- !u!114 &-6088989287517616248
@@ -465,6 +720,81 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-5438623185611405034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MissileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 0
+--- !u!114 &-5421610060336926885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
+  m_EditorClassIdentifier: 
+  Name: PercentEnemiesRemaining
+  StudioPath: 
+  Min: 1
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
+--- !u!114 &-5152486053619345171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/TurretFire/FireMachineGun_Single
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/TurretFire/FireMachineGun_Single
+  Guid:
+    Data1: 1850670645
+    Data2: 1185162280
+    Data3: 986431664
+    Data4: -1109989002
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 30
+  Length: 169
 --- !u!114 &-5109390126329620920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,6 +819,81 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 0
+--- !u!114 &-4797729225307657343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
+  m_EditorClassIdentifier: 
+  Name: PercentEnemiesRemaining
+  StudioPath: 
+  Min: 1
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
+--- !u!114 &-4462765634569243968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ProjectileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 0
+--- !u!114 &-4306304932399040573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/TurretMove/TurretRotate
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/TurretMove/TurretRotate
+  Guid:
+    Data1: -187221647
+    Data2: 1190375218
+    Data3: -1529403749
+    Data4: 929611131
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 10
+  Length: 4410
 --- !u!114 &-4097531128820689292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,12 +957,87 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637698452911513174
+  lastModified: 637699791769962657
   FileSizes:
   - Name: 
-    Value: 1260
+    Value: 2378
   Exists: 1
+--- !u!114 &-3383784367247757260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Traps and Turret Placement/PlaceObject
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Traps and Turret Placement/PlaceObject
+  Guid:
+    Data1: 1639937071
+    Data2: 1092987392
+    Data3: -682616405
+    Data4: 1710575093
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 727
+--- !u!114 &-3381984189681911885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
+  m_EditorClassIdentifier: 
+  Name: EnemyMaxDistance
+  StudioPath: 
+  Min: 10
+  Max: 1000
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
 --- !u!114 &-3350442710566066653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
+  m_EditorClassIdentifier: 
+  Name: EnemyMaxDistance
+  StudioPath: 
+  Min: 10
+  Max: 1000
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
+--- !u!114 &-2928246634929814818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -608,6 +1088,33 @@ MonoBehaviour:
   - Sphere
   - Triangle
   Exists: 0
+--- !u!114 &-2793621944251784465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Camera/SwitchToFPView
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Camera/SwitchToFPView
+  Guid:
+    Data1: -1303535611
+    Data2: 1170757758
+    Data3: 77060750
+    Data4: 1478998061
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1414
 --- !u!114 &-2547723844870846889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,6 +1139,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 0
+--- !u!114 &-2454088594047822676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
+  m_EditorClassIdentifier: 
+  Name: PercentEnemiesRemaining
+  StudioPath: 
+  Min: 1
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
 --- !u!114 &-2260593423769182720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,6 +1185,30 @@ MonoBehaviour:
     data2: 0
   Type: 0
   IsGlobal: 1
+  Labels: []
+  Exists: 0
+--- !u!114 &-2131707438102742024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MissileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
   Labels: []
   Exists: 0
 --- !u!114 &-2103218392244671277
@@ -707,6 +1262,30 @@ MonoBehaviour:
   - Sphere
   - Triangle
   Exists: 1
+--- !u!114 &-1842994052688020517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
+  m_EditorClassIdentifier: 
+  Name: EnemyMaxDistance
+  StudioPath: 
+  Min: 10
+  Max: 1000
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
 --- !u!114 &-1730562127316573857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,6 +1310,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-1562019220362867758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/TurretFire/FireRegular
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/TurretFire/FireRegular
+  Guid:
+    Data1: 400437149
+    Data2: 1212261784
+    Data3: -2015012939
+    Data4: 69034497
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 30
+  Length: 250
 --- !u!114 &-1519893393058298280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -770,7 +1376,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/ILoveBanks.bank
   Name: ILoveBanks
   StudioPath: bank:/ILoveBanks
-  lastModified: 637698452911403067
+  lastModified: 637699791769852950
   FileSizes: []
   Exists: 1
 --- !u!114 &-882883144138900759
@@ -848,6 +1454,30 @@ MonoBehaviour:
   - Sphere
   - Triangle
   Exists: 1
+--- !u!114 &-319152435332610633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ProjectileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 0
 --- !u!114 &-316827646627366434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -875,6 +1505,33 @@ MonoBehaviour:
   - Sphere
   - Triangle
   Exists: 0
+--- !u!114 &-151496986321301472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Camera/SwitchToGodView
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Camera/SwitchToGodView
+  Guid:
+    Data1: 378111883
+    Data2: 1206650887
+    Data3: -2051746933
+    Data4: -2042872235
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1293
 --- !u!114 &-144101603530896871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,6 +1580,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 0
+--- !u!114 &-1847786042420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyType
+  m_EditorClassIdentifier: 
+  Name: EnemyType
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Cube
+  - Sphere
+  - Triangle
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,9 +1624,26 @@ MonoBehaviour:
   - {fileID: -1218948961547959074}
   - {fileID: -6494936724584552986}
   EditorEvents:
-  - {fileID: 5361828880106869401}
   - {fileID: -7930575253042351130}
   - {fileID: 1252998583772760729}
+  - {fileID: -2793621944251784465}
+  - {fileID: 8680599034157260963}
+  - {fileID: 1462152582531154700}
+  - {fileID: -3383784367247757260}
+  - {fileID: -5152486053619345171}
+  - {fileID: 1519553987756595981}
+  - {fileID: 6349583901756449100}
+  - {fileID: -4306304932399040573}
+  - {fileID: 5381644051388915262}
+  - {fileID: -151496986321301472}
+  - {fileID: 581220364307463094}
+  - {fileID: -1562019220362867758}
+  - {fileID: -8781483547829686552}
+  - {fileID: -8725396747410158809}
+  - {fileID: -7550431447602637403}
+  - {fileID: -7372567336799364342}
+  - {fileID: 1523192769924576701}
+  - {fileID: 307015931765694305}
   EditorParameters:
   - {fileID: 5999233006668588343}
   - {fileID: 7404560999005503279}
@@ -951,7 +1652,7 @@ MonoBehaviour:
   - {fileID: -6494936724584552986}
   StringsBanks:
   - {fileID: -3411260506842130420}
-  cacheTime: 637698452911513174
+  cacheTime: 637699791769962657
   cacheVersion: 9
 --- !u!114 &128996284773065451
 MonoBehaviour:
@@ -1055,6 +1756,33 @@ MonoBehaviour:
   - Sphere
   - Triangle
   Exists: 1
+--- !u!114 &307015931765694305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environmental/Play_SkyWind_Stereo
+  m_EditorClassIdentifier: 
+  Path: event:/Environmental/Play_SkyWind_Stereo
+  Guid:
+    Data1: 1777094184
+    Data2: 1111038744
+    Data3: 554829752
+    Data4: 389026470
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 50
+  MaxDistance: 500
+  Length: 3000
 --- !u!114 &308044553938564549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1105,6 +1833,81 @@ MonoBehaviour:
   - Cube
   - Sphere
   - Triangle
+  Exists: 0
+--- !u!114 &560006596212314874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
+  m_EditorClassIdentifier: 
+  Name: EnemyMaxDistance
+  StudioPath: 
+  Min: 10
+  Max: 1000
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
+--- !u!114 &581220364307463094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/Death/PlayerDeath
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/Death/PlayerDeath
+  Guid:
+    Data1: -590989425
+    Data2: 1151430851
+    Data3: -1970882943
+    Data4: -1611886053
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &629847091989611932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ProjectileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 0
 --- !u!114 &688228132553136723
 MonoBehaviour:
@@ -1205,6 +2008,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 0
+--- !u!114 &866591430807469877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ProjectileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &885860426042881088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1304,7 +2131,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -5626875348595382275}
+  - {fileID: 7375393197318219393}
   MinDistance: 1
   MaxDistance: 20
   Length: 52000
@@ -1359,6 +2186,33 @@ MonoBehaviour:
   - Sphere
   - Triangle
   Exists: 0
+--- !u!114 &1462152582531154700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/Death/EnemyDeath
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/Death/EnemyDeath
+  Guid:
+    Data1: -179112916
+    Data2: 1341312681
+    Data3: 223447180
+    Data4: 1635952118
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 30
+  Length: 4000
 --- !u!114 &1478659248117226912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1383,6 +2237,84 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 0
+--- !u!114 &1492139054219038218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MissileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 0
+--- !u!114 &1519553987756595981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Warnings/EnemyNearWarningBeep_Single
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Warnings/EnemyNearWarningBeep_Single
+  Guid:
+    Data1: 546670675
+    Data2: 1279843516
+    Data3: 1298536868
+    Data4: -1568255341
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 1222
+--- !u!114 &1523192769924576701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/TurretFire/FireMachineGun_Burst3
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/TurretFire/FireMachineGun_Burst3
+  Guid:
+    Data1: -633350401
+    Data2: 1117896519
+    Data3: 1411777195
+    Data4: -1981300809
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 30
+  Length: 292
 --- !u!114 &1608755810141072677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1406,6 +2338,108 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Labels: []
+  Exists: 0
+--- !u!114 &1684718344750242618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
+  m_EditorClassIdentifier: 
+  Name: PercentEnemiesRemaining
+  StudioPath: 
+  Min: 1
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
+--- !u!114 &2015008255031495420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MissileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 0
+--- !u!114 &2052297878924734060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyType
+  m_EditorClassIdentifier: 
+  Name: EnemyType
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Cube
+  - Sphere
+  - Triangle
+  Exists: 1
+--- !u!114 &2135432736493380906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyType
+  m_EditorClassIdentifier: 
+  Name: EnemyType
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Cube
+  - Sphere
+  - Triangle
   Exists: 0
 --- !u!114 &2174723738869477791
 MonoBehaviour:
@@ -1557,6 +2591,33 @@ MonoBehaviour:
   - Sphere
   - Triangle
   Exists: 1
+--- !u!114 &2930942654757198341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyType
+  m_EditorClassIdentifier: 
+  Name: EnemyType
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Cube
+  - Sphere
+  - Triangle
+  Exists: 0
 --- !u!114 &3140556482575194699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1581,7 +2642,58 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 0
+--- !u!114 &3470691547439362723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
+  m_EditorClassIdentifier: 
+  Name: EnemyMaxDistance
+  StudioPath: 
+  Min: 10
+  Max: 1000
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
 --- !u!114 &3544637134915735773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyType
+  m_EditorClassIdentifier: 
+  Name: EnemyType
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Cube
+  - Sphere
+  - Triangle
+  Exists: 0
+--- !u!114 &3594306469634060293
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1755,6 +2867,57 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 0
+--- !u!114 &4996355249426349921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyType
+  m_EditorClassIdentifier: 
+  Name: EnemyType
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Cube
+  - Sphere
+  - Triangle
+  Exists: 0
+--- !u!114 &5055609660238916362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ProjectileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 0
 --- !u!114 &5361828880106869401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1782,6 +2945,130 @@ MonoBehaviour:
   MinDistance: 50
   MaxDistance: 500
   Length: 3000
+--- !u!114 &5381644051388915262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/Projectile/ProjectileCollision
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/Projectile/ProjectileCollision
+  Guid:
+    Data1: -1514240908
+    Data2: 1189367358
+    Data3: -603652476
+    Data4: -1017223468
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 866591430807469877}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &5404362981109650322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
+  m_EditorClassIdentifier: 
+  Name: EnemyMaxDistance
+  StudioPath: 
+  Min: 10
+  Max: 1000
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
+--- !u!114 &5690141826580314010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
+  m_EditorClassIdentifier: 
+  Name: PercentEnemiesRemaining
+  StudioPath: 
+  Min: 1
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
+--- !u!114 &5828968498871584455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ProjectileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 0
+--- !u!114 &5996152986797815318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MissileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 0
 --- !u!114 &5999233006668588343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1806,7 +3093,130 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &6349583901756449100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environmental/Play_SkyWind
+  m_EditorClassIdentifier: 
+  Path: event:/Environmental/Play_SkyWind
+  Guid:
+    Data1: 1813282405
+    Data2: 1237935250
+    Data3: -612978289
+    Data4: -1437874353
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 50
+  MaxDistance: 500
+  Length: 3000
+--- !u!114 &6381430186489989082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
+  m_EditorClassIdentifier: 
+  Name: PercentEnemiesRemaining
+  StudioPath: 
+  Min: 1
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
+--- !u!114 &6660524157280305212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ProjectileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 0
 --- !u!114 &6796179007226821058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
+  m_EditorClassIdentifier: 
+  Name: PercentEnemiesRemaining
+  StudioPath: 
+  Min: 1
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &7311041118352292506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MissileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &7375393197318219393
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1881,6 +3291,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &7728349372719172214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
+  m_EditorClassIdentifier: 
+  Name: PercentEnemiesRemaining
+  StudioPath: 
+  Min: 1
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 0
 --- !u!114 &7859414523267950575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2054,6 +3488,60 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Labels: []
+  Exists: 0
+--- !u!114 &8680599034157260963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Warnings/EnemyNearWarningBeep_Loop
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Warnings/EnemyNearWarningBeep_Loop
+  Guid:
+    Data1: -132429026
+    Data2: 1164740251
+    Data3: -1900835177
+    Data4: -1559018858
+  Banks:
+  - {fileID: -1218948961547959074}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 1222
+--- !u!114 &9108597432065337397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyType
+  m_EditorClassIdentifier: 
+  Name: EnemyType
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Cube
+  - Sphere
+  - Triangle
   Exists: 0
 --- !u!114 &9187792528919280478
 MonoBehaviour:
