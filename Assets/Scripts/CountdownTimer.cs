@@ -8,8 +8,8 @@ using UnityEngine.EventSystems;
 
 public class CountdownTimer : MonoBehaviour
 {
-    public float timeStartValue = 60;
-    public float timerTime;
+    public static float timeStartValue = 60;
+    public static float timerTime;
 
     public GameObject timerText;
 
@@ -46,9 +46,9 @@ public class CountdownTimer : MonoBehaviour
         timerText.GetComponent<TextMeshProUGUI>().text = "Time Resources\n" + string.Format("{0000}", seconds);
     }
 
-    void AddTime()
+    public static void AddTime(float _extraTime)
     {
-        timerTime += 0;
+        timerTime += _extraTime;
     }
 
 }

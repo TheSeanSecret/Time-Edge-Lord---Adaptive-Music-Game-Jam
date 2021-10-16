@@ -25,6 +25,12 @@ public class EnemyCubeAi : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, new Vector3(0.5f, 0.5f, 1.0f), speed * Time.deltaTime);
+
+        // Because some enemies shake so much that they glitch through the level and fall down
+        if (transform.position.y <= -20)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter(Collider other)

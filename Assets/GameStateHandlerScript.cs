@@ -45,15 +45,19 @@ public class GameStateHandlerScript : MonoBehaviour
 
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("PercentOfEnemiesRemaining", percentageOfEnemies);
 
-        if (currentNumberOfEnemies <= 0)
+        
+        if (currentNumberOfEnemies <= 0 && currentTurn < numberOfSieges)
         {
             EndSiege();
         }
+        
     }
 
     public void StartCalmTimes()
     {
-        Invoke("StartSiege", 10f);
+        Debug.Log("StartCalmTimes");
+
+        Invoke("StartSiege", 5f);
 
         // Spawn enemies from random direction
         int randomDirection = Random.Range(1, 5);
@@ -94,6 +98,10 @@ public class GameStateHandlerScript : MonoBehaviour
 
     public void StartSiege()
     {
+        Debug.Log("StartSiege");
+
+        CountdownTimer.AddTime(currentTurn * 10);
+
         Debug.Log("Started Siege");
         SiegeDrums.GetComponent<TriggerSiegeDrums>().PlayDrums();
 
@@ -117,7 +125,6 @@ public class GameStateHandlerScript : MonoBehaviour
     {
         SiegeDrums.GetComponent<TriggerSiegeDrums>().StopDrums();
 
-
         if (currentTurn >= numberOfSieges)
         {
             GameEndWin();
@@ -131,6 +138,7 @@ public class GameStateHandlerScript : MonoBehaviour
     public void GameEndWin()
     {
         // You won! :D
+        YouWinText.SetActive(true);
     }
 
     public void GameEndLose()

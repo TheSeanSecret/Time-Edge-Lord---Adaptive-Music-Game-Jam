@@ -15,6 +15,7 @@ public class BulletScript : MonoBehaviour
 
     // Assign tracking target here
     private Transform target;
+    public GameObject Timer;
 
 
     public void Seek(Transform _target)
@@ -72,6 +73,8 @@ public class BulletScript : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Destroy(other.gameObject);
+            Debug.Log("Hit Enemy");
+            CountdownTimer.AddTime(5);
         }
 
         // Instantiate Explosion FX
