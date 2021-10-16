@@ -147,9 +147,9 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 1155926849673342616}
-  - {fileID: 274492201747820744}
-  - {fileID: 803649996878884661}
+  - {fileID: 3376346579356465715}
+  - {fileID: -973625658168468185}
+  - {fileID: 5578519369726056187}
   MinDistance: 5
   MaxDistance: 100
   Length: 0
@@ -273,7 +273,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637698452911492823
+  lastModified: 637699213312209307
   FileSizes: []
   Exists: 1
 --- !u!114 &-6395341600652313479
@@ -441,6 +441,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 0
+--- !u!114 &-5774937187739409003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
+  m_EditorClassIdentifier: 
+  Name: PercentEnemiesRemaining
+  StudioPath: 
+  Min: 1
+  Max: 100
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-5626875348595382275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,7 +576,7 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637698452911513174
+  lastModified: 637699213312209307
   FileSizes:
   - Name: 
     Value: 1260
@@ -770,8 +794,35 @@ MonoBehaviour:
   Path: Assets/FMODBanks/Desktop/ILoveBanks.bank
   Name: ILoveBanks
   StudioPath: bank:/ILoveBanks
-  lastModified: 637698452911403067
+  lastModified: 637699213312204349
   FileSizes: []
+  Exists: 1
+--- !u!114 &-973625658168468185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyType
+  m_EditorClassIdentifier: 
+  Name: EnemyType
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Cube
+  - Sphere
+  - Triangle
   Exists: 1
 --- !u!114 &-882883144138900759
 MonoBehaviour:
@@ -951,7 +1002,7 @@ MonoBehaviour:
   - {fileID: -6494936724584552986}
   StringsBanks:
   - {fileID: -3411260506842130420}
-  cacheTime: 637698452911513174
+  cacheTime: 637699213312209307
   cacheVersion: 9
 --- !u!114 &128996284773065451
 MonoBehaviour:
@@ -1304,7 +1355,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -5626875348595382275}
+  - {fileID: -5774937187739409003}
   MinDistance: 1
   MaxDistance: 20
   Length: 52000
@@ -1581,6 +1632,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 0
+--- !u!114 &3376346579356465715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
+  m_EditorClassIdentifier: 
+  Name: EnemyMaxDistance
+  StudioPath: 
+  Min: 10
+  Max: 1000
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &3544637134915735773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1782,6 +1857,30 @@ MonoBehaviour:
   MinDistance: 50
   MaxDistance: 500
   Length: 3000
+--- !u!114 &5578519369726056187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/IsInGodView
+  m_EditorClassIdentifier: 
+  Name: IsInGodView
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &5999233006668588343
 MonoBehaviour:
   m_ObjectHideFlags: 0

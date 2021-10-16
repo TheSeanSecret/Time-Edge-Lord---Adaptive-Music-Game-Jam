@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - HillFloor
+  - WorldPlane
+  - EnemySpawnCollider
+  - Bullet
+  - Hill
   layers:
   - Default
   - TransparentFX

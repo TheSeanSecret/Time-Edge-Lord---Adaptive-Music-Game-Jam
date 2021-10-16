@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject pauseMenu;
 
     void Update()
     {
@@ -11,6 +12,11 @@ public class GameManager : MonoBehaviour
         {
             QuitGame();
         }
+    }
+
+    void ShowPauseMenu()
+    {
+
     }
 
     void QuitGame()

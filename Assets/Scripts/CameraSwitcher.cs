@@ -10,19 +10,29 @@ public class CameraSwitcher : MonoBehaviour
     public GameObject ControlsTextPlayerView;
     public GameObject ControlsTextGodView;
 
+    public enum CurrentCamera {PlayerCam, GodCam};
+    public CurrentCamera activeCamera;
+
     void Start()
     {
         // Start with the player perspective and lock cursor
         // PlayerCamera.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
+
+
+        activeCamera = CurrentCamera.PlayerCam;
     }
 
-    // Update is called once per frame
     void Update()
+    {
+        ChangeCameraView();
+    }
+
+    void ChangeCameraView()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if(PlayerCamera.activeSelf == true)
+            if (PlayerCamera.activeSelf == true)
             {
                 PlayerCamera.SetActive(false);
                 GodCamera.SetActive(true);
@@ -30,6 +40,7 @@ public class CameraSwitcher : MonoBehaviour
                 ControlsTextGodView.SetActive(true);
 
                 Debug.Log("Switch to God Camera");
+                activeCamera = CurrentCamera.GodCam;
 
                 Cursor.lockState = CursorLockMode.None;
             }
@@ -41,11 +52,10 @@ public class CameraSwitcher : MonoBehaviour
                 ControlsTextPlayerView.SetActive(true);
 
                 Debug.Log("Switch to Player Camera");
+                activeCamera = CurrentCamera.PlayerCam;
 
                 Cursor.lockState = CursorLockMode.Locked;
             }
         }
-
-
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
+    public GameObject turretMissilePosition;
 
     public float speed = 12f;
 
@@ -22,7 +23,24 @@ public class PlayerController : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
+    }
+
+    void TurretPlacementHandler()
+    {
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            // Higlight Current Turrent at position of
+        }
 
 
+        if (Input.GetKeyDown(KeyCode.Mouse0) && Input.GetKey(KeyCode.Mouse1))
+        {
+            // Place Turret
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            // Delete Turret that player is looking at
+        }
     }
 }

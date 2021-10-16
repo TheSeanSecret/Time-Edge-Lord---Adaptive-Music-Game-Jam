@@ -106,7 +106,7 @@ public class CameraGodCOntroller : MonoBehaviour
 
 
         // Camera Rotation
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (Input.GetKey(KeyCode.Mouse0) && !Input.GetKey(KeyCode.Mouse1))
         {
             newOrbitRotation *= Quaternion.Euler(Vector3.up * Input.GetAxis("Mouse X") * rotationAmount);
             //newTiltRotation *= Quaternion.Euler(Vector3.right * Input.GetAxis("Mouse Y") * -rotationAmount);
@@ -144,7 +144,6 @@ public class CameraGodCOntroller : MonoBehaviour
             // Debug.Log(grabbedPoint);
 
 
-
             RaycastHit hit;
             if (Input.GetKey(KeyCode.Mouse2) && plane.GetComponent<MeshCollider>().Raycast(cameraRay, out hit, rayLength))
             {
@@ -171,13 +170,14 @@ public class CameraGodCOntroller : MonoBehaviour
             }
         }
     }
+
     void TrapPlacementController()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        Ray cameraPosition = mainCamera.ScreenPointToRay(Input.mousePosition);
+
+        if (Input.GetKey(KeyCode.Mouse1) && Input.GetKeyDown(KeyCode.Mouse0))
         {
             Instantiate(tempTrap, new Vector3(rayHitPositionForTrapPlacemenet.x, rayHitPositionForTrapPlacemenet.y + tempTrap.transform.localScale.y/2, rayHitPositionForTrapPlacemenet.z), Quaternion.identity);
-            
-            
         }
     }
 }

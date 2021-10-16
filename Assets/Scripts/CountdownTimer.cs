@@ -9,7 +9,7 @@ using UnityEngine.EventSystems;
 public class CountdownTimer : MonoBehaviour
 {
     public float timeStartValue = 60;
-    private float timerTime;
+    public float timerTime;
 
     public GameObject timerText;
 
