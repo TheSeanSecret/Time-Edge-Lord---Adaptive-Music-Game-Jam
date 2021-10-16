@@ -15,7 +15,7 @@ public class TurretScript : MonoBehaviour
     Vector3 turretAim;
     public GameObject fakeRayCast;
 
-    public Transform enemyToAimAt;
+
 
     void Start()
     {
@@ -29,7 +29,6 @@ public class TurretScript : MonoBehaviour
     {
         // If there are enemies left then execute LookAtEnemyAndShoot();
         LookAtEnemyAndShoot();
-        RotateTurret();
     }
 
     void LookAtEnemyAndShoot()
@@ -44,23 +43,5 @@ public class TurretScript : MonoBehaviour
         //      
     }
 
-    void RotateTurret()
-    {
-        Vector3 rotateHeadTowardsTargetPos = new Vector3(enemyToAimAt.position.x, transform.position.y, enemyToAimAt.position.z);
 
-        // Rotate head only on the Y axis
-        TurretHead.transform.rotation = Quaternion.Lerp(TurretHead.transform.rotation, Quaternion.LookRotation(rotateHeadTowardsTargetPos + transform.position), smoothRotationSpeed * 2 * Time.deltaTime);
-
-        // Rotate barrel only on the X axis from its edge
-
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Enemy")
-        {
-            enemyToAimAt = other.gameObject.transform;
-            Debug.Log("Entered Range");
-        }
-    }
 }
