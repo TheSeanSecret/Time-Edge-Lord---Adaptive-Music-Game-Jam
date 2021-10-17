@@ -75,15 +75,8 @@ public class EnemyCubeAi : MonoBehaviour
                 Debug.Log("Enemy Reached Hill");
             }
         }
-
-        if (other.gameObject.tag == "EnemySpawnCollider")
-        {
-            Debug.Log("Killed myself");
-            Destroy(gameObject);
-        }
     }
 
-    /*
     void OnCollisionEnter(Collider other)
     {
         if (other.gameObject.tag == "EnemySpawnCollider")
@@ -92,5 +85,4 @@ public class EnemyCubeAi : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    */
 }

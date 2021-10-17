@@ -38,8 +38,6 @@ public class MenuSystemManager : MonoBehaviour
     [Header("Menus")]
     public GameObject turretMenu;
     public GameObject trapMenu;
-    public GameObject loseMenu;
-    public GameObject winMenu;
 
     void Start()
     {

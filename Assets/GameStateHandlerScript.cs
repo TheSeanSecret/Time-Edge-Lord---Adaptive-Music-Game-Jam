@@ -160,8 +160,6 @@ public class GameStateHandlerScript : MonoBehaviour
         // You lose! :(
         Time.timeScale = 0f;    
         YouLoseText.SetActive(true);
-        Cursor.lockState = CursorLockMode.None;
-
         Debug.Log("You Lose");
     }
 }

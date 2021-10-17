@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,20 +14,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ShowPauseMenu()
+    void ShowPauseMenu()
     {
 
     }
 
-    public void QuitGame()
+    void QuitGame()
     {
         Debug.Log("Application Quit");
         Application.Quit();
-    }
-
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        // Application.LoadLevel(0);
     }
 }
