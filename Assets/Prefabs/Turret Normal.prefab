@@ -276,7 +276,7 @@ MonoBehaviour:
   rotationSpeed: 2
   bulletPrefab: {fileID: 5671953332672395001, guid: e1f4cd47d20aa594cb8a77412905dc6a, type: 3}
   firePoint: {fileID: 2698279339123752724}
-  fireRate: 0.8
+  fireRate: 1
   target: {fileID: 0}
   range: 1000
   enemyTag: Enemy

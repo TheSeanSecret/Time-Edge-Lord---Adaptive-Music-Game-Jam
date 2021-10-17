@@ -249,7 +249,7 @@ MonoBehaviour:
   rotationSpeed: 10
   bulletPrefab: {fileID: 3740598765240077985, guid: 33341fb19d180e5418ea32b9ae15dbaf, type: 3}
   firePoint: {fileID: 5350826979940521423}
-  fireRate: 1
+  fireRate: 2
   target: {fileID: 0}
   range: 1000
   enemyTag: Enemy
@@ -282,11 +282,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1100126179
-      Data2: 1157523258
-      Data3: 1130350261
-      Data4: 700942265
-    Path: event:/BattleSFX/TurretFire/FireMissile
+      Data1: 1639937071
+      Data2: 1092987392
+      Data3: -682616405
+      Data4: 1710575093
+    Path: event:/UI/Traps and Turret Placement/PlaceObject
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -296,7 +296,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 30
 --- !u!1 &5350826979045418348
 GameObject:
   m_ObjectHideFlags: 0

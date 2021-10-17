@@ -51,7 +51,7 @@ MonoBehaviour:
   rotationSpeed: 2
   bulletPrefab: {fileID: 2168009066763790866, guid: 30de809d4bf814a479b9e60b33fed564, type: 3}
   firePoint: {fileID: 1815849375278574684}
-  fireRate: 10
+  fireRate: 20
   target: {fileID: 0}
   range: 80
   enemyTag: Enemy

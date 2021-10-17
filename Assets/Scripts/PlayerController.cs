@@ -33,8 +33,10 @@ public class PlayerController : MonoBehaviour
         spawnTurretPositionCubeRenderer = spawnTurretPositionCube.GetComponent<Renderer>();
         startColor = spawnTurretPositionCubeRenderer.material.color;
 
-        //transform.rotation = new Quaternion(0f, 90f, 0f, 0f);
+        currentChoosenTurret = normalTurret;
+        timeToRemove = -10;
 
+        //transform.rotation = new Quaternion(0f, 90f, 0f, 0f);
     }
 
     // Update is called once per frame
@@ -67,7 +69,7 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("Chose Machine Gun Turret");
         currentChoosenTurret = machineGunTurret;
-        timeToRemove = -60;
+        timeToRemove = -120;
     }
 
     void TurretPlacementHandler()

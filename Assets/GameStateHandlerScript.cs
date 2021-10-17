@@ -10,6 +10,7 @@ public class GameStateHandlerScript : MonoBehaviour
     public int spawnedNumberOfEnemies;
     public int currentNumberOfEnemies;
     public float percentageOfEnemies;
+    public float timeMultiplier;
 
     public GameObject Timer;
     public GameObject SiegeText;
@@ -48,7 +49,6 @@ public class GameStateHandlerScript : MonoBehaviour
             // Debug.Log(currentTurn + ", " + numberOfSieges);
             RestartOrCheckWin();
         }
-        
     }
 
     public void StartCalmTimes()
@@ -108,7 +108,7 @@ public class GameStateHandlerScript : MonoBehaviour
     {
         Debug.Log("StartSiege");
 
-        CountdownTimer.AddTime(currentTurn * 5);
+        CountdownTimer.AddTime(currentTurn * timeMultiplier);
 
         Debug.Log("Started Siege");
         SiegeDrums.GetComponent<TriggerSiegeDrums>().PlayDrums();

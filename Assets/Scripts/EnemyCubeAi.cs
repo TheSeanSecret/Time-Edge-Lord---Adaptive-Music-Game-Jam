@@ -76,4 +76,13 @@ public class EnemyCubeAi : MonoBehaviour
             }
         }
     }
+
+    void OnCollision(Collider other)
+    {
+        if (other.gameObject.tag == "EnemySpawnCollider")
+        {
+            Destroy(gameObject);
+
+        }
+    }
 }

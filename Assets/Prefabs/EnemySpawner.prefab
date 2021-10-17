@@ -210,4 +210,4 @@ MonoBehaviour:
   SphereEnemy: {fileID: 4426765803451295819, guid: 11b6d57af900d244bbbbf8ae42023b91, type: 3}
   TriangleEnemy: {fileID: 4736192427588506262, guid: c14161d70c49c3e4bbf8ce279a18d4f8, type: 3}
   GameStateHandlerScript: {fileID: 0}
-  thisTimesCurrentTurn: 3
+  thisTimesCurrentTurn: 10
