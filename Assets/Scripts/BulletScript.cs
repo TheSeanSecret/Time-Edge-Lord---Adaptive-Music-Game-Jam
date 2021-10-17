@@ -73,7 +73,7 @@ public class BulletScript : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Destroy(other.gameObject);
-            Debug.Log("Hit Enemy");
+            // Debug.Log("Hit Enemy");
             CountdownTimer.AddTime(2);
             Instantiate(EnemyExplosion, other.transform.position, transform.rotation);
         }
