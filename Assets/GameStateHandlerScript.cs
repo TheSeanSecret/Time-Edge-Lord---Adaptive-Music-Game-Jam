@@ -57,6 +57,13 @@ public class GameStateHandlerScript : MonoBehaviour
 
         Invoke("StartSiege", 5f);
 
+        // Enable colliders if enemies spawn inside each other and reach the hill by collisions with each other
+        GameObject[] CollidersToEnable = GameObject.FindGameObjectsWithTag("EnemySpawnCollider");
+        foreach (GameObject Collider in CollidersToEnable)
+        {
+            Collider.SetActive(true);
+        }
+
         // Spawn enemies from random direction
         int randomDirection = Random.Range(1, 5);
         switch (randomDirection)
@@ -78,7 +85,11 @@ public class GameStateHandlerScript : MonoBehaviour
                 Debug.Log("Enemies will come from South");
                 break;
         }
+    }
 
+    public void DisableAllEnemies()
+        // Code run from enemyspanwerscript
+    {
         // Find all enemies and disable renderer and movement except for sound
         GameObject[] EnemiesToDisable = GameObject.FindGameObjectsWithTag("Enemy");
 
@@ -91,7 +102,6 @@ public class GameStateHandlerScript : MonoBehaviour
         // Count number of enemies
         spawnedNumberOfEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
         Debug.Log("There are " + spawnedNumberOfEnemies + " enemies");
-
     }
 
     public void StartSiege()
@@ -103,10 +113,16 @@ public class GameStateHandlerScript : MonoBehaviour
         Debug.Log("Started Siege");
         SiegeDrums.GetComponent<TriggerSiegeDrums>().PlayDrums();
 
-        // Find all enemies and disable renderer and movement except for sound
-        GameObject[] EnemiesToDisable = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] CollidersToDisable = GameObject.FindGameObjectsWithTag("EnemySpawnCollider");
+        foreach (GameObject Collider in CollidersToDisable)
+        {
+            Collider.SetActive(false);
+        }
 
-        foreach (GameObject Enemy in EnemiesToDisable)
+        // Find all enemies and enable
+        GameObject[] EnemiesToEnable = GameObject.FindGameObjectsWithTag("Enemy");
+
+        foreach (GameObject Enemy in EnemiesToEnable)
         {
             Enemy.GetComponent<EnemyCubeAi>().enabled = true;
             Enemy.GetComponent<MeshRenderer>().enabled = true;

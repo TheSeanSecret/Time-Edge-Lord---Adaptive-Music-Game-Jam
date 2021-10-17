@@ -309,11 +309,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1639937071
-      Data2: 1092987392
-      Data3: -682616405
-      Data4: 1710575093
-    Path: event:/UI/Traps and Turret Placement/PlaceObject
+      Data1: 400437149
+      Data2: 1212261784
+      Data3: -2015012939
+      Data4: 69034497
+    Path: event:/BattleSFX/TurretFire/FireRegular
   Event: 
   PlayEvent: 1
   StopEvent: 2

@@ -56,5 +56,7 @@ public class EnemySpawnerScript : MonoBehaviour
 
         // Spawn a enemy (times currentTurn of gamestatehandler) at random positions of this objects X size
         Instantiate(RandomEnemy, new Vector3(Random.Range(GetComponent<Collider>().bounds.size.x / 2 + transform.position.x, -GetComponent<Collider>().bounds.size.x / 2 + transform.position.x), transform.position.y, transform.position.z), transform.rotation);
+
+        GameStateHandlerScript.GetComponent<GameStateHandlerScript>().DisableAllEnemies();
     }
 }

@@ -110,10 +110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da9aca8192dd4b0458b1df98564ba6ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 20
   tracking: 1
   trackingSpeed: 10
   trackingSpeedLerpTime: 1
+  EnemyExplosion: {fileID: 2152019096615167831, guid: b1fb83382db2d6141b8c92c171379cae, type: 3}
 --- !u!114 &6327165422629856830
 MonoBehaviour:
   m_ObjectHideFlags: 0

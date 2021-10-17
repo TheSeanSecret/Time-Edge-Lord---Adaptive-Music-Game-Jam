@@ -29,7 +29,7 @@ public class CountdownTimer : MonoBehaviour
         {
             timerTime = 0;
             // Game End
-            Debug.Log("Game End");
+            Debug.Log("Out of Time");
             GameStateHandlerScript.GetComponent<GameStateHandlerScript>().GameEndLose();
         }
 

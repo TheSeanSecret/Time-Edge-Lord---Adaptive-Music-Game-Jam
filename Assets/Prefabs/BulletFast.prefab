@@ -114,6 +114,7 @@ MonoBehaviour:
   tracking: 1
   trackingSpeed: 20
   trackingSpeedLerpTime: 200
+  EnemyExplosion: {fileID: 2152019096615167831, guid: b1fb83382db2d6141b8c92c171379cae, type: 3}
 --- !u!114 &4862206614856399737
 MonoBehaviour:
   m_ObjectHideFlags: 0

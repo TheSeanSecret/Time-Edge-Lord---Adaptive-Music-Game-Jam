@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyCubeAi : MonoBehaviour
 {
     GameObject GameStateHandler;
+    GameObject Hill;
 
     public float XYZRotationForce = 500f;
     public float speed = 1;
@@ -12,7 +13,6 @@ public class EnemyCubeAi : MonoBehaviour
     void Start()
     {
         GetComponent<Rigidbody>().AddRelativeTorque(Random.Range(-XYZRotationForce, XYZRotationForce), Random.Range(-XYZRotationForce, XYZRotationForce), Random.Range(-XYZRotationForce, XYZRotationForce));
-        GameStateHandler = GameObject.Find("GameStateHandler");
     }
 
 
@@ -31,6 +31,24 @@ public class EnemyCubeAi : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        // some objects reach the hill even though the shouldn't
+        Hill = GameObject.Find("Hill");
+        if (Hill.gameObject.GetComponent<Collider>().bounds.Contains(transform.position))
+        {
+            Invoke("EnemyDeath", 1);
+        }
+
+
+        if (GetComponent<MeshRenderer>().enabled == false)
+        {
+            GetComponent<EnemyCubeAi>().enabled = false;
+        }
+    }
+
+    void EnemyDeath()
+    {
+        Destroy(gameObject);
     }
 
     void OnTriggerEnter(Collider other)
@@ -46,8 +64,16 @@ public class EnemyCubeAi : MonoBehaviour
         // If player hits checkpoint then set new respanwCheckpoint
         if (other.gameObject.tag == "Hill")
         {
-            GameStateHandler.GetComponent<GameStateHandlerScript>().GameEndLose();
-            Destroy(gameObject);
+            if (GetComponent<MeshRenderer>().enabled == false)
+            {
+                Destroy(gameObject);
+            }
+            else if (GetComponent<MeshRenderer>().enabled == true)
+            {
+                GameStateHandler = GameObject.Find("GameStateHandler");
+                GameStateHandler.GetComponent<GameStateHandlerScript>().GameEndLose();
+                Debug.Log("Enemy Reached Hill");
+            }
         }
     }
 }
