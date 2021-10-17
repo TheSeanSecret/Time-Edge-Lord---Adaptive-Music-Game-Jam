@@ -12,6 +12,7 @@ public class CountdownTimer : MonoBehaviour
     public static float timerTime;
 
     public GameObject timerText;
+    public GameObject GameStateHandlerScript;
 
 
     void Start()
@@ -29,6 +30,7 @@ public class CountdownTimer : MonoBehaviour
             timerTime = 0;
             // Game End
             Debug.Log("Game End");
+            GameStateHandlerScript.GetComponent<GameStateHandlerScript>().GameEndLose();
         }
 
         DisplayTime(timerTime);

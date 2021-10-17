@@ -7,8 +7,8 @@ public class GameStateHandlerScript : MonoBehaviour
 {
     public int numberOfSieges = 3;
     int currentTurn;
-    public float spawnedNumberOfEnemies;
-    public float currentNumberOfEnemies;
+    public int spawnedNumberOfEnemies;
+    public int currentNumberOfEnemies;
     public float percentageOfEnemies;
 
     public GameObject Timer;
@@ -40,15 +40,15 @@ public class GameStateHandlerScript : MonoBehaviour
     void Update()
     {
         currentNumberOfEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
-        percentageOfEnemies = (currentNumberOfEnemies / spawnedNumberOfEnemies) * 100f;
+        percentageOfEnemies = ((float)currentNumberOfEnemies / (float)spawnedNumberOfEnemies) * 100f;
         // add null exception
 
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("PercentOfEnemiesRemaining", percentageOfEnemies);
-
         
-        if (currentNumberOfEnemies <= 0 && currentTurn < numberOfSieges)
+        if (currentNumberOfEnemies <= 0 && (currentTurn < numberOfSieges))
         {
-            EndSiege();
+            // Debug.Log(currentTurn + ", " + numberOfSieges);
+            RestartOrCheckWin();
         }
         
     }
@@ -118,14 +118,14 @@ public class GameStateHandlerScript : MonoBehaviour
         Debug.Log("Turn is: " + currentTurn);
         currentTurn++;
 
-        // When all enemies are dead (checked in Update) we call EndSiege();
+        // When all enemies are dead (checked in Update) we call RestartOrCheckWin();
     }
 
-    public void EndSiege()
+    public void RestartOrCheckWin()
     {
         SiegeDrums.GetComponent<TriggerSiegeDrums>().StopDrums();
 
-        if (currentTurn >= numberOfSieges)
+        if (currentTurn >= (numberOfSieges - 1))
         {
             GameEndWin();
         }
