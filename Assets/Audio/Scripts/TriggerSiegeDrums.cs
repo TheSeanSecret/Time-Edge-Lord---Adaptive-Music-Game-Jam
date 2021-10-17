@@ -23,6 +23,7 @@ public class TriggerSiegeDrums : MonoBehaviour
     public void StopDrums()
     {
         if (!isPlaying) return;
+        Debug.Log("stopping");
 
         siegeDrums.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 
