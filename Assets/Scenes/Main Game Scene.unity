@@ -736,7 +736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663990951cdf0fc4ab2ebac89c21d349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfSieges: 5
+  numberOfSieges: 20
   spawnedNumberOfEnemies: 0
   currentNumberOfEnemies: 0
   percentageOfEnemies: 0
@@ -750,7 +750,6 @@ MonoBehaviour:
   West: {fileID: 2076206640}
   East: {fileID: 1133143616}
   SiegeDrums: {fileID: 1111889246}
-  Calm: 0
 --- !u!4 &402499393
 Transform:
   m_ObjectHideFlags: 0
@@ -2669,7 +2668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.01478, y: -31.1081}
+  m_AnchoredPosition: {x: -0.01478, y: -31.108154}
   m_SizeDelta: {x: 800.03, y: 62.2162}
   m_Pivot: {x: 0.5, y: 0.49999994}
 --- !u!114 &930597608
@@ -8663,7 +8662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 157.39615, y: 48.152176}
+  m_AnchoredPosition: {x: 157.39612, y: 48.15222}
   m_SizeDelta: {x: 314.8323, y: 101.6812}
   m_Pivot: {x: 0.5, y: 0.47352532}
 --- !u!114 &1270047122

@@ -25,11 +25,9 @@ public class GameStateHandlerScript : MonoBehaviour
 
     public GameObject SiegeDrums;
 
-    public bool Calm;
-
-
     void Start()
     {
+
         // This is our first time
         currentTurn = 1;
         StartCalmTimes();
@@ -100,7 +98,7 @@ public class GameStateHandlerScript : MonoBehaviour
     {
         Debug.Log("StartSiege");
 
-        CountdownTimer.AddTime(currentTurn * 10);
+        CountdownTimer.AddTime(currentTurn * 5);
 
         Debug.Log("Started Siege");
         SiegeDrums.GetComponent<TriggerSiegeDrums>().PlayDrums();

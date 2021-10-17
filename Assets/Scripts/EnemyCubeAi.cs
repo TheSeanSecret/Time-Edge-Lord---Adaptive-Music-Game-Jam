@@ -47,6 +47,7 @@ public class EnemyCubeAi : MonoBehaviour
         if (other.gameObject.tag == "Hill")
         {
             GameStateHandler.GetComponent<GameStateHandlerScript>().GameEndLose();
+            Destroy(gameObject);
         }
     }
 }
