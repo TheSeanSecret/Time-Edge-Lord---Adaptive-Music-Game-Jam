@@ -1,153 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9068868195907863558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MissileCollision/CollisionStrength
-  m_EditorClassIdentifier: 
-  Name: CollisionStrength
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-9024986494389788711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-8751405002142993530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &-8723729241195148969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-8665495478060995682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-8636201972138008886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-7930575253042351130
+--- !u!114 &-8899095960816188416
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,131 +10,52 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/EnemyStems/PlayEnemyMusic
+  m_Name: event:/Music/SiegeDrums/SiegeDrums
   m_EditorClassIdentifier: 
-  Path: event:/Music/EnemyStems/PlayEnemyMusic
+  Path: event:/Music/SiegeDrums/SiegeDrums
   Guid:
-    Data1: 2115833935
-    Data2: 1265735856
-    Data3: -2032006236
-    Data4: 2040629701
+    Data1: -586516348
+    Data2: 1233292433
+    Data3: 1581181850
+    Data4: 643779840
   Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 1
-  Is3D: 1
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6362085886070873364}
-  - {fileID: -3521887214464640066}
-  MinDistance: 5
+  - {fileID: 6893072538748532295}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 46000
+--- !u!114 &-8630098394229840156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Warnings/EnemyNearWarningBeep_Loop
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Warnings/EnemyNearWarningBeep_Loop
+  Guid:
+    Data1: -132429026
+    Data2: 1164740251
+    Data3: -1900835177
+    Data4: -1559018858
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
   MaxDistance: 100
-  Length: 0
---- !u!114 &-7294577963154139966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &-7192033914462448565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-7095388434852551110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &-6668574868168329502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &-6494936724584552986
+  Length: 1222
+--- !u!114 &-8261416059773750267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -291,15 +65,98 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMODBanks/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637699780930848224
-  FileSizes: []
+  Path: Assets/FMODBanks/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637700840753376584
+  FileSizes:
+  - Name: 
+    Value: 2378
   Exists: 1
---- !u!114 &-6395341600652313479
+--- !u!114 &-7244687836037425719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Camera/SwitchToFPView
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Camera/SwitchToFPView
+  Guid:
+    Data1: -1303535611
+    Data2: 1170757758
+    Data3: 77060750
+    Data4: 1478998061
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1414
+--- !u!114 &-5504443047880439044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/TurretFire/FireMissile
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/TurretFire/FireMissile
+  Guid:
+    Data1: 1100126179
+    Data2: 1157523258
+    Data3: 1130350261
+    Data4: 700942265
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 30
+  Length: 2912
+--- !u!114 &-4907701072222043551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyType
+  m_EditorClassIdentifier: 
+  Name: EnemyType
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Cube
+  - Sphere
+  - Triangle
+  Exists: 1
+--- !u!114 &-4676423902983499917
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -323,625 +180,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-6253076910318236296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-6088989287517616248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-6012279157907468946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &-6002909442782424531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-5805992604649760860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/testbank.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMODBanks/Desktop/testbank.bank
-  Name: testbank
-  StudioPath: bank:/testbank
-  lastModified: 637698368016274927
-  FileSizes: []
-  Exists: 0
---- !u!114 &-5780209435199798645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-5774937187739409003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-5626875348595382275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-5497384177426728694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Traps and Turret Placement/RemoveObject
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Traps and Turret Placement/RemoveObject
-  Guid:
-    Data1: 735535088
-    Data2: 1102900058
-    Data3: -2099242589
-    Data4: 1146919249
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1468
---- !u!114 &-5109390126329620920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-4097531128820689292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-4091074168122788776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-3893549848326229626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Camera/SwitchToGodView
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Camera/SwitchToGodView
-  Guid:
-    Data1: 378111883
-    Data2: 1206650887
-    Data3: -2051746933
-    Data4: -2042872235
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1293
---- !u!114 &-3521887214464640066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 1
---- !u!114 &-3411260506842130420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMODBanks/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637699780930853192
-  FileSizes:
-  - Name: 
-    Value: 2330
-  Exists: 1
---- !u!114 &-3350442710566066653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-3171125314557607241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BattleSFX/Projectile/ProjectileCollision
-  m_EditorClassIdentifier: 
-  Path: event:/BattleSFX/Projectile/ProjectileCollision
-  Guid:
-    Data1: -1514240908
-    Data2: 1189367358
-    Data3: -603652476
-    Data4: -1017223468
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 8790342480937338528}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
---- !u!114 &-2825322827258718322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &-2547723844870846889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/MaxDistance
-  m_EditorClassIdentifier: 
-  Name: MaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 500
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 0
---- !u!114 &-2291166606819972630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BattleSFX/Death/EnemyDeath
-  m_EditorClassIdentifier: 
-  Path: event:/BattleSFX/Death/EnemyDeath
-  Guid:
-    Data1: -179112916
-    Data2: 1341312681
-    Data3: 223447180
-    Data4: 1635952118
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 30
-  Length: 4000
---- !u!114 &-2260593423769182720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-2103218392244671277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-1991002928844867948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-1893957511227757684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 1
---- !u!114 &-1839693109697695974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BattleSFX/TurretFire/FireMissile
-  m_EditorClassIdentifier: 
-  Path: event:/BattleSFX/TurretFire/FireMissile
-  Guid:
-    Data1: 1100126179
-    Data2: 1157523258
-    Data3: 1130350261
-    Data4: 700942265
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 30
-  Length: 2912
---- !u!114 &-1816336366192811862
+--- !u!114 &-4530077626337033862
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -960,7 +199,7 @@ MonoBehaviour:
     Data3: -682616405
     Data4: 1710575093
   Banks:
-  - {fileID: -1218948961547959074}
+  - {fileID: 1619905091182744434}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -968,704 +207,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 727
---- !u!114 &-1730562127316573857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-1519893393058298280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-1218948961547959074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/ILoveBanks.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMODBanks/Desktop/ILoveBanks.bank
-  Name: ILoveBanks
-  StudioPath: bank:/ILoveBanks
-  lastModified: 637699780930843272
-  FileSizes: []
-  Exists: 1
---- !u!114 &-1161635872212013223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BattleSFX/Death/PlayerDeath
-  m_EditorClassIdentifier: 
-  Path: event:/BattleSFX/Death/PlayerDeath
-  Guid:
-    Data1: -590989425
-    Data2: 1151430851
-    Data3: -1970882943
-    Data4: -1611886053
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
---- !u!114 &-973625658168468185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &-882883144138900759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/CameraHeight
-  m_EditorClassIdentifier: 
-  Name: CameraHeight
-  StudioPath: parameter:/CameraHeight
-  Min: 0
-  Max: 50
-  Default: 0
-  ID:
-    data1: 1609886426
-    data2: 275098570
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-773661827657742885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-638359542558895063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 1
---- !u!114 &-316827646627366434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &-144101603530896871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &-140894216382059942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -3411260506842130420}
-  - {fileID: -1218948961547959074}
-  - {fileID: -6494936724584552986}
-  EditorEvents:
-  - {fileID: -7930575253042351130}
-  - {fileID: 1252998583772760729}
-  - {fileID: 5961684133411244844}
-  - {fileID: 1538227915999886870}
-  - {fileID: -2291166606819972630}
-  - {fileID: -1816336366192811862}
-  - {fileID: 5139612482070942643}
-  - {fileID: 399140113613947170}
-  - {fileID: 685296838307315591}
-  - {fileID: 4311260046063959369}
-  - {fileID: -3171125314557607241}
-  - {fileID: -3893549848326229626}
-  - {fileID: -1161635872212013223}
-  - {fileID: 7188836976709226489}
-  - {fileID: 7107021312725114950}
-  - {fileID: 8877528954082635072}
-  - {fileID: -1839693109697695974}
-  - {fileID: -5497384177426728694}
-  - {fileID: 1247158694903895201}
-  EditorParameters:
-  - {fileID: 5999233006668588343}
-  - {fileID: 7404560999005503279}
-  - {fileID: -6395341600652313479}
-  MasterBanks:
-  - {fileID: -6494936724584552986}
-  StringsBanks:
-  - {fileID: -3411260506842130420}
-  cacheTime: 637699780930853192
-  cacheVersion: 9
---- !u!114 &128996284773065451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &158568817261448920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &240390236961104851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 1
---- !u!114 &274492201747820744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 1
---- !u!114 &308044553938564549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &399140113613947170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Warnings/EnemyNearWarningBeep_Single
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Warnings/EnemyNearWarningBeep_Single
-  Guid:
-    Data1: 546670675
-    Data2: 1279843516
-    Data3: 1298536868
-    Data4: -1568255341
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 100
-  Length: 1222
---- !u!114 &442719265691446810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &685296838307315591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environmental/Play_SkyWind
-  m_EditorClassIdentifier: 
-  Path: event:/Environmental/Play_SkyWind
-  Guid:
-    Data1: 1813282405
-    Data2: 1237935250
-    Data3: -612978289
-    Data4: -1437874353
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 50
-  MaxDistance: 500
-  Length: 3000
---- !u!114 &688228132553136723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &803649996878884661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/IsInGodView
-  m_EditorClassIdentifier: 
-  Name: IsInGodView
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &858400554368195043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &865720495286662053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &885860426042881088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &1131884406459728143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &1155926849673342616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &1247158694903895201
+--- !u!114 &-4393210347671779430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1684,7 +226,7 @@ MonoBehaviour:
     Data3: 1411777195
     Data4: -1981300809
   Banks:
-  - {fileID: -1218948961547959074}
+  - {fileID: 1619905091182744434}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1692,7 +234,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 30
   Length: 292
---- !u!114 &1252998583772760729
+--- !u!114 &-4063722079151781416
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1702,127 +244,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/SiegeDrums/SiegeDrums
+  m_Name: event:/UI/Traps and Turret Placement/RemoveObject
   m_EditorClassIdentifier: 
-  Path: event:/Music/SiegeDrums/SiegeDrums
+  Path: event:/UI/Traps and Turret Placement/RemoveObject
   Guid:
-    Data1: -975617578
-    Data2: 1075064623
-    Data3: -2131751005
-    Data4: -183344378
+    Data1: 735535088
+    Data2: 1102900058
+    Data3: -2099242589
+    Data4: 1146919249
   Banks:
-  - {fileID: -1218948961547959074}
+  - {fileID: 1619905091182744434}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -1991002928844867948}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 52000
---- !u!114 &1338899281358115265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &1345029840529796929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &1478659248117226912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &1538227915999886870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Warnings/EnemyNearWarningBeep_Loop
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Warnings/EnemyNearWarningBeep_Loop
-  Guid:
-    Data1: -132429026
-    Data2: 1164740251
-    Data3: -1900835177
-    Data4: -1559018858
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 100
-  Length: 1222
---- !u!114 &1608755810141072677
+  MaxDistance: 20
+  Length: 1468
+--- !u!114 &-3651596362486220528
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1832,321 +271,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &2174723738869477791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
+  m_Name: parameter:/PercentEnemiesRemaining
   m_EditorClassIdentifier: 
   Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
+  StudioPath: parameter:/PercentEnemiesRemaining
+  Min: 0
   Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &2247755580877783407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
   Default: 0
   ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &2295866336511308479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
+    data1: 260864318
+    data2: 3651645611
   Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &2567390815241785135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/IsInGodView
-  m_EditorClassIdentifier: 
-  Name: IsInGodView
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &2576241244707352650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &2577675512867986273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 1
---- !u!114 &3140556482575194699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &3376346579356465715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &3544637134915735773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &3759142285855963059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &3887619171936361903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &4242634731228680069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &4311260046063959369
+--- !u!114 &-2593156830948474538
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2165,7 +304,7 @@ MonoBehaviour:
     Data3: -1529403749
     Data4: 929611131
   Banks:
-  - {fileID: -1218948961547959074}
+  - {fileID: 1619905091182744434}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -2173,336 +312,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 10
   Length: 4410
---- !u!114 &4532398332181807195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &4543947481253634067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &4920823116686584963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &5139612482070942643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BattleSFX/TurretFire/FireMachineGun_Single
-  m_EditorClassIdentifier: 
-  Path: event:/BattleSFX/TurretFire/FireMachineGun_Single
-  Guid:
-    Data1: 1850670645
-    Data2: 1185162280
-    Data3: 986431664
-    Data4: -1109989002
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 30
-  Length: 169
---- !u!114 &5361828880106869401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environmental/Sky/Play_SkyWind
-  m_EditorClassIdentifier: 
-  Path: event:/Environmental/Sky/Play_SkyWind
-  Guid:
-    Data1: 1813282405
-    Data2: 1237935250
-    Data3: -612978289
-    Data4: -1437874353
-  Banks: []
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 50
-  MaxDistance: 500
-  Length: 3000
---- !u!114 &5578519369726056187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/IsInGodView
-  m_EditorClassIdentifier: 
-  Name: IsInGodView
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &5961684133411244844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Camera/SwitchToFPView
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Camera/SwitchToFPView
-  Guid:
-    Data1: -1303535611
-    Data2: 1170757758
-    Data3: 77060750
-    Data4: 1478998061
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1414
---- !u!114 &5999233006668588343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: parameter:/PercentEnemiesRemaining
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 260864318
-    data2: 3651645611
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &6362085886070873364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &6796179007226821058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &7107021312725114950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Traps and Turret Placement/MoveObject
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Traps and Turret Placement/MoveObject
-  Guid:
-    Data1: -272837943
-    Data2: 1097041599
-    Data3: 1544349066
-    Data4: 1486511311
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 497
---- !u!114 &7188836976709226489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BattleSFX/TurretFire/FireRegular
-  m_EditorClassIdentifier: 
-  Path: event:/BattleSFX/TurretFire/FireRegular
-  Guid:
-    Data1: 400437149
-    Data2: 1212261784
-    Data3: -2015012939
-    Data4: 69034497
-  Banks:
-  - {fileID: -1218948961547959074}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 30
-  Length: 250
---- !u!114 &7393811974839052702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &7404560999005503279
+--- !u!114 &-1980172571809889185
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2526,7 +336,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &7859414523267950575
+--- !u!114 &-1740383556286480376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2535,172 +345,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/TurretFire/FireMachineGun_Single
   m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &7916168374631545100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/MaxDistance
-  m_EditorClassIdentifier: 
-  Name: MaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 500
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &8011985135795530103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
-  m_EditorClassIdentifier: 
-  Name: EnemyMaxDistance
-  StudioPath: 
-  Min: 10
-  Max: 1000
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &8224054328378256533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &8315515932695113595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &8414831416577249870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &8621480028731628108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SiegeDrums/PercentEnemiesRemaining
-  m_EditorClassIdentifier: 
-  Name: PercentEnemiesRemaining
-  StudioPath: 
-  Min: 1
-  Max: 100
-  Default: 100
-  ID:
-    data1: 0
-    data2: 0
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 0
---- !u!114 &8790342480937338528
+  Path: event:/BattleSFX/TurretFire/FireMachineGun_Single
+  Guid:
+    Data1: 1850670645
+    Data2: 1185162280
+    Data3: 986431664
+    Data4: -1109989002
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 30
+  Length: 169
+--- !u!114 &-685570287566260934
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2724,7 +387,366 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &8877528954082635072
+--- !u!114 &-534023675211844050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environmental/Play_SkyWind
+  m_EditorClassIdentifier: 
+  Path: event:/Environmental/Play_SkyWind
+  Guid:
+    Data1: 1813282405
+    Data2: 1237935250
+    Data3: -612978289
+    Data4: -1437874353
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 50
+  MaxDistance: 500
+  Length: 3000
+--- !u!114 &-479872334056084069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/TurretFire/FireRegular
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/TurretFire/FireRegular
+  Guid:
+    Data1: 400437149
+    Data2: 1212261784
+    Data3: -2015012939
+    Data4: 69034497
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 30
+  Length: 250
+--- !u!114 &-299839179980896097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/Projectile/ProjectileCollision
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/Projectile/ProjectileCollision
+  Guid:
+    Data1: -1514240908
+    Data2: 1189367358
+    Data3: -603652476
+    Data4: -1017223468
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -685570287566260934}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -8261416059773750267}
+  - {fileID: 1619905091182744434}
+  - {fileID: 7415846992323443581}
+  EditorEvents:
+  - {fileID: -7244687836037425719}
+  - {fileID: -8630098394229840156}
+  - {fileID: 3841329921819048972}
+  - {fileID: 4653231945856206702}
+  - {fileID: -4530077626337033862}
+  - {fileID: -1740383556286480376}
+  - {fileID: 1931300027977255849}
+  - {fileID: 1195292554969469595}
+  - {fileID: -534023675211844050}
+  - {fileID: -2593156830948474538}
+  - {fileID: -299839179980896097}
+  - {fileID: -8899095960816188416}
+  - {fileID: 4328207563913573755}
+  - {fileID: 973186358461840154}
+  - {fileID: -479872334056084069}
+  - {fileID: 8205486049879980570}
+  - {fileID: 6673065266714346637}
+  - {fileID: -5504443047880439044}
+  - {fileID: -4063722079151781416}
+  - {fileID: -4393210347671779430}
+  EditorParameters:
+  - {fileID: -3651596362486220528}
+  - {fileID: -4676423902983499917}
+  - {fileID: -1980172571809889185}
+  MasterBanks:
+  - {fileID: 7415846992323443581}
+  StringsBanks:
+  - {fileID: -8261416059773750267}
+  cacheTime: 637700840753376584
+  cacheVersion: 9
+--- !u!114 &973186358461840154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/Death/PlayerDeath
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/Death/PlayerDeath
+  Guid:
+    Data1: -590989425
+    Data2: 1151430851
+    Data3: -1970882943
+    Data4: -1611886053
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &1195292554969469595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Warnings/EnemyNearWarningBeep_Single
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Warnings/EnemyNearWarningBeep_Single
+  Guid:
+    Data1: 546670675
+    Data2: 1279843516
+    Data3: 1298536868
+    Data4: -1568255341
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 1222
+--- !u!114 &1350598561747356980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MissileCollision/CollisionStrength
+  m_EditorClassIdentifier: 
+  Name: CollisionStrength
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &1619905091182744434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/ILoveBanks.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODBanks/Desktop/ILoveBanks.bank
+  Name: ILoveBanks
+  StudioPath: bank:/ILoveBanks
+  lastModified: 637700840753371630
+  FileSizes: []
+  Exists: 1
+--- !u!114 &1931300027977255849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/EnemyStems/PlayEnemyMusic
+  m_EditorClassIdentifier: 
+  Path: event:/Music/EnemyStems/PlayEnemyMusic
+  Guid:
+    Data1: 2115833935
+    Data2: 1265735856
+    Data3: -2032006236
+    Data4: 2040629701
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2465700431198770965}
+  - {fileID: -4907701072222043551}
+  MinDistance: 5
+  MaxDistance: 100
+  Length: 0
+--- !u!114 &2465700431198770965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PlayEnemyMusic/EnemyMaxDistance
+  m_EditorClassIdentifier: 
+  Name: EnemyMaxDistance
+  StudioPath: 
+  Min: 10
+  Max: 1000
+  Default: 100
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3841329921819048972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environmental/Play_SkyWind_Stereo
+  m_EditorClassIdentifier: 
+  Path: event:/Environmental/Play_SkyWind_Stereo
+  Guid:
+    Data1: 1777094184
+    Data2: 1111038744
+    Data3: 554829752
+    Data4: 389026470
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 50
+  MaxDistance: 500
+  Length: 3000
+--- !u!114 &4328207563913573755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Camera/SwitchToGodView
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Camera/SwitchToGodView
+  Guid:
+    Data1: 378111883
+    Data2: 1206650887
+    Data3: -2051746933
+    Data4: -2042872235
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1293
+--- !u!114 &4653231945856206702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BattleSFX/Death/EnemyDeath
+  m_EditorClassIdentifier: 
+  Path: event:/BattleSFX/Death/EnemyDeath
+  Guid:
+    Data1: -179112916
+    Data2: 1341312681
+    Data3: 223447180
+    Data4: 1635952118
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 30
+  Length: 4000
+--- !u!114 &6673065266714346637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2743,43 +765,16 @@ MonoBehaviour:
     Data3: -1903177285
     Data4: -268808653
   Banks:
-  - {fileID: -1218948961547959074}
+  - {fileID: 1619905091182744434}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -9068868195907863558}
+  - {fileID: 1350598561747356980}
   MinDistance: 1
   MaxDistance: 50
   Length: 2000
---- !u!114 &9187792528919280478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
-  m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
---- !u!114 &9192312366988808099
+--- !u!114 &6893072538748532295
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2793,17 +788,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: PercentEnemiesRemaining
   StudioPath: 
-  Min: 1
+  Min: 0
   Max: 100
-  Default: 100
+  Default: 0
   ID:
     data1: 0
     data2: 0
   Type: 0
   IsGlobal: 1
   Labels: []
-  Exists: 0
---- !u!114 &9196463940162291610
+  Exists: 1
+--- !u!114 &7415846992323443581
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2812,21 +807,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/PlayEnemyMusic/EnemyType
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Name: EnemyType
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 0
-    data2: 0
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cube
-  - Sphere
-  - Triangle
-  Exists: 0
+  Path: Assets/FMODBanks/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637700840753376584
+  FileSizes: []
+  Exists: 1
+--- !u!114 &8205486049879980570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Traps and Turret Placement/MoveObject
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Traps and Turret Placement/MoveObject
+  Guid:
+    Data1: -272837943
+    Data2: 1097041599
+    Data3: 1544349066
+    Data4: 1486511311
+  Banks:
+  - {fileID: 1619905091182744434}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 497
